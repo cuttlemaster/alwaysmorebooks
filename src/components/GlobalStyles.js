@@ -8,12 +8,6 @@ const GlobalStyles = ({theme}) => {
         /* LAYOUT STYLES ========================= */
         html { background-color: ${theme.colors.mainBg}; }
 
-        main {
-          display: block;
-          margin: auto;
-          max-width: 1000px;
-        }
-
         /* ELEMENT STYLES ========================= */
         h1 {
           margin-bottom: 15px;

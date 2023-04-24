@@ -9,9 +9,7 @@ export default function Home() {
         <meta name="description" content="A review blog about science fiction, fantasy, and other genre fiction books." />
       </Head>
 
-      <main>
 
-      </main>
     </>
   )
 }
