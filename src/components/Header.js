@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import theme from "../styles/theme";
 
 const HeaderComponent = styled.header`
-  margin: auto;
+  margin: 18px auto 15px auto;
   border-bottom: 3px solid ${theme.colors.black};
   max-width: 1000px;
   text-transform: uppercase;
