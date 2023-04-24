@@ -11,13 +11,12 @@ const GlobalStyles = ({theme}) => {
         main {
           display: block;
           margin: auto;
-          padding-top: 15px;
+          /* padding-top: 15px; */
           max-width: 1000px;
         }
 
         /* ELEMENT STYLES ========================= */
         h1 {
-          padding-bottom: 10px;
           border-bottom: 3px solid $dark-gray;
           font-family: ${theme.fonts.lilitaOne};
           font-size: 36px;
