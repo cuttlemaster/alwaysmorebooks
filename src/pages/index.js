@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Always More Books</h1>
+
       </main>
     </>
   )
