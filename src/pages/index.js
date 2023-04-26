@@ -8,8 +8,6 @@ export default function Home() {
         <title>Always More Books</title>
         <meta name="description" content="A review blog about science fiction, fantasy, and other genre fiction books." />
       </Head>
-
-
     </>
   )
 }
