@@ -1,8 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
 import styled from '@emotion/styled';
 import theme from '../styles/theme';
 
-const FeaturedContainer = styled.div`
+
+const FeaturedPostContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -41,3 +43,22 @@ const FeaturedContainer = styled.div`
     }
   }
 `;
+
+const FeaturedPost = ({ post }) => {
+  const { title, author, categories, coverImage } = post;
+
+  return (
+    <FeaturedPostContainer>
+      <div className="book-cover">
+        <Image src={coverImage} alt={`Cover image for ${title}`} width={200} height={300} />
+      </div>
+      <div className="post-details">
+        <div className="categories">{categories.join(', ')}</div>
+        <h2>{title}</h2>
+        <div className="author">By: {author}</div>
+      </div>
+    </FeaturedPostContainer>
+  );
+};
+
+export default FeaturedPost;
