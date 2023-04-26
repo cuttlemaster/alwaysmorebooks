@@ -4,6 +4,8 @@ import styled from "@emotion/styled";
 import theme from "../styles/theme";
 
 const NavContainer = styled.nav`
+  margin-bottom: 50px;
+
   ul {
     display: flex;
     gap: 50px;

@@ -9,6 +9,8 @@ const FeaturedPostContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  padding: 25px 0 25px 25px;
+  background-color: ${theme.colors.featuredBg};
 
   .book-cover {
     flex: 1;
@@ -21,25 +23,29 @@ const FeaturedPostContainer = styled.div`
 
   .post-details {
     flex: 2;
-    margin-left: 20px;
+    margin-left: 25px;
 
     .categories {
-      font-size: 12px;
-      font-weight: 300;
-      color: ${theme.colors.darkGray};
+      margin-top: 25px;
       margin-bottom: 5px;
+      font-family: ${theme.fonts.robotoCondensed};
+      font-size: 14px;
+      font-weight: 400;
+      color: ${theme.colors.darkGray};
+      text-transform: uppercase;
     }
 
     h2 {
-      font-family: ${theme.fonts.lilitaOne};
-      font-size: 24px;
-      line-height: 24px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
+      padding: 25px;
+      background-color: ${theme.colors.yellow};
+      font-weight: 700;
     }
 
     .author {
       font-family: ${theme.fonts.robotoCondensed};
-      font-size: 16px;
+      font-size: 24px;
+      font-weight: 700;
       color: ${theme.colors.darkGray};
     }
   }
@@ -51,12 +57,12 @@ const FeaturedPost = ({ post }) => {
   return (
     <FeaturedPostContainer>
       <div className="book-cover">
-        <Image src={coverImage} alt={`Cover image for ${title}`} width={200} height={300} />
+        <Image src={coverImage} alt={`Cover image for ${title}`} />
       </div>
       <div className="post-details">
-        <div className="categories">{categories.join(', ')}</div>
+        <div className="categories">Categories: {categories.join(', ')}</div>
         <h2>{title}</h2>
-        <div className="author">By: {author}</div>
+        <div className="author">Author: {author}</div>
       </div>
     </FeaturedPostContainer>
   );

@@ -17,6 +17,14 @@ const GlobalStyles = ({theme}) => {
           line-height: 36px;
         }
 
+        h2 {
+          font-family: ${theme.fonts.robotoCondensed};
+          font-size: 64px;
+          font-weight: 700;
+          line-height: 64px;
+          text-transform: uppercase;
+        }
+
         /* COLOR HELPER CLASSES ========================= */
         .red { color: ${theme.colors.red}; }
         .tan { color: ${theme.colors.tan}; }

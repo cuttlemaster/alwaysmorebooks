@@ -7,7 +7,7 @@ import LegendsAndLattes from '../images/covers/legends-and-lattes.png';
 const samplePost = {
   title: 'Legends & Lattes',
   author: 'Travis Balderee',
-  categories: ['Category 1', 'Category 2'],
+  categories: ['Fantasy', 'Light Reading'],
   coverImage: LegendsAndLattes,
 };
 

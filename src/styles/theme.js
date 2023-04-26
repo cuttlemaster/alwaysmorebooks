@@ -7,9 +7,10 @@ const theme = {
     yellow: "#f6be11",
     tan: "#b89457",
     lightBlue: "#00a8e1",
-    // darkBlue: "#00013c",
+    darkBlue: "#00013c",
     darkGray: "#434343",
     mainBg: "#fefefe",
+    featuredBg: "#d5dbdb",
   },
   fonts: {
     lilitaOne: "'Lilita One', serif",
