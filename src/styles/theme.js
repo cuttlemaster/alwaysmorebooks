@@ -10,7 +10,7 @@ const theme = {
     darkBlue: "#00013c",
     darkGray: "#434343",
     mainBg: "#fefefe",
-    featuredBg: "#d5dbdb",
+    featuredBg: "#eeeeee",
   },
   fonts: {
     lilitaOne: "'Lilita One', serif",

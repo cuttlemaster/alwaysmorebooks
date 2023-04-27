@@ -11,6 +11,7 @@ const FeaturedPostContainer = styled.div`
   margin-bottom: 30px;
   padding: 25px 0 25px 25px;
   background-color: ${theme.colors.featuredBg};
+  border-radius: 50px;
 
   .book-cover {
     flex: 1;
@@ -18,6 +19,7 @@ const FeaturedPostContainer = styled.div`
     img {
       width: 100%;
       height: auto;
+      border-radius: 25px;
     }
   }
 
