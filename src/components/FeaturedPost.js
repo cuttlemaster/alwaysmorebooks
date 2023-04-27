@@ -43,6 +43,7 @@ const FeaturedPostContainer = styled.div`
     }
 
     .author {
+      margin-bottom: 25px;
       font-family: ${theme.fonts.robotoCondensed};
       font-size: 24px;
       font-weight: 700;
@@ -52,12 +53,12 @@ const FeaturedPostContainer = styled.div`
 `;
 
 const FeaturedPost = ({ post }) => {
-  const { title, author, categories, coverImage } = post;
+  const { title, author, categories, cover, hook } = post;
 
   return (
     <FeaturedPostContainer>
       <div className="book-cover">
-        <Image src={coverImage} alt={`Cover image for ${title}`} />
+        <Image src={cover} alt={`Cover image for ${title}`} />
       </div>
       <div className="post-details">
         <div className="categories">Categories: {categories.join(', ')}</div>
