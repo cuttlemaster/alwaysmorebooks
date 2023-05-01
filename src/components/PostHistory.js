@@ -13,7 +13,7 @@ const PostHistoryContainer = styled.div`
   }
 `;
 
-const BookReviewTile = styled.div`
+const RecentReviewTile = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,7 +74,7 @@ const PostHistory = ({ data }) => {
   return (
     <PostHistoryContainer>
       <h3>Recent Reviews</h3>
-      <dataReviewTile>
+      <RecentReviewTile>
         <div className="book-cover">
           <Image src={book1.cover} alt={`Cover image for ${book1.title}`} />
         </div>
@@ -84,9 +84,9 @@ const PostHistory = ({ data }) => {
           <div className="categories">Categories: {book1.categories.join(', ')}</div>
           <div className="date">{book1.date}</div>
         </div>
-      </dataReviewTile>
+      </RecentReviewTile>
 
-      <dataReviewTile>
+      <RecentReviewTile>
         <div className="book-cover">
           <Image src={book2.cover} alt={`Cover image for ${book2.title}`} />
         </div>
@@ -96,9 +96,9 @@ const PostHistory = ({ data }) => {
           <div className="categories">Categories: {book2.categories.join(', ')}</div>
           <div className="date">{book2.date}</div>
         </div>
-      </dataReviewTile>
+      </RecentReviewTile>
 
-      <dataReviewTile>
+      <RecentReviewTile>
         <div className="book-cover">
           <Image src={book3.cover} alt={`Cover image for ${book3.title}`} />
         </div>
@@ -108,9 +108,9 @@ const PostHistory = ({ data }) => {
           <div className="categories">Categories: {book3.categories.join(', ')}</div>
           <div className="date">{book3.date}</div>
         </div>
-      </dataReviewTile>
+      </RecentReviewTile>
 
-      <dataReviewTile>
+      <RecentReviewTile>
         <div className="book-cover">
           <Image src={book4.cover} alt={`Cover image for ${book4.title}`} />
         </div>
@@ -120,9 +120,9 @@ const PostHistory = ({ data }) => {
           <div className="categories">Categories: {book4.categories.join(', ')}</div>
           <div className="date">{book4.date}</div>
         </div>
-      </dataReviewTile>
+      </RecentReviewTile>
 
-      <dataReviewTile>
+      <RecentReviewTile>
         <div className="book-cover">
           <Image src={book5.cover} alt={`Cover image for ${book5.title}`} />
         </div>
@@ -132,7 +132,7 @@ const PostHistory = ({ data }) => {
           <div className="categories">Categories: {book5.categories.join(', ')}</div>
           <div className="date">{book5.date}</div>
         </div>
-      </dataReviewTile>
+      </RecentReviewTile>
     </PostHistoryContainer>
   );
 };
