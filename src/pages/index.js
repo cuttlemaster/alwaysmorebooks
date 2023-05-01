@@ -1,7 +1,11 @@
 import Head from 'next/head'
+import styled from '@emotion/styled';
+
+import theme from '../styles/theme';
 
 import FeaturedPost from '../components/FeaturedPost';
 import PostHistory from '../components/PostHistory';
+import Sidebar from '../components/Sidebar';
 
 import TressOfTheEmeraldSea from '../images/covers/tress-of-the-emerald-sea.png';
 import LegendsAndLattes from '../images/covers/legends-and-lattes.png';
@@ -50,7 +54,11 @@ const sampleHistory = {
   },
 };
 
-const HistoryAndSidebarContainer = styled.div``;
+const HistoryAndSidebarContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+`;
 
 export default function Home() {
   return (
@@ -60,12 +68,11 @@ export default function Home() {
         <meta name="description" content="A review blog about science fiction, fantasy, and other genre fiction books." />
       </Head>
 
-      <main>
-        <FeaturedPost post={samplePost} />
-        <HistoryAndSidebarContainer>
-          <PostHistory recent={sampleHistory} />
-        </HistoryAndSidebarContainer>
-      </main>
+      <FeaturedPost post={samplePost} />
+      <HistoryAndSidebarContainer>
+        <PostHistory recent={sampleHistory} />
+        <Sidebar />
+      </HistoryAndSidebarContainer>
     </>
   )
 }

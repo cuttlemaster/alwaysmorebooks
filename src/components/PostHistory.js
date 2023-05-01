@@ -4,15 +4,21 @@ import styled from '@emotion/styled';
 
 import theme from '../styles/theme';
 
-const PostHistoryContainer = styled.div``;
+const PostHistoryContainer = styled.div`
+  h3 {
+    margin-bottom: 25px;
+    border-bottom: 3px solid ${theme.colors.darkGray};
+    font-family: ${theme.fonts.robotoCondensed};
+    font-size: 28px;
+  }
+`;
 
 const RecentReviewTile = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
-  padding: 10px 0 5px 10px;
-  max-width: 66%;
+  padding: 10px 0 5px 0px;
 
   .book-cover {
     flex: 1;
@@ -40,8 +46,8 @@ const RecentReviewTile = styled.div`
     h2 {
       margin-bottom: 5px;
       padding: 10px 0 8px 17px;
-      border-bottom: 3px solid ${theme.colors.lightBlue};
-      border-left: 3px solid ${theme.colors.lightBlue};
+      border-bottom: 5px solid ${theme.colors.lightBlue};
+      border-left: 5px solid ${theme.colors.lightBlue};
       border-radius: 35px;
       font-size: 28px;
       line-height: 24px;
@@ -61,6 +67,7 @@ const RecentReviewTile = styled.div`
 const PostHistory = ({ recent }) => {
   return (
     <PostHistoryContainer>
+      <h3>Recent Reviews</h3>
       <RecentReviewTile>
         <div className="book-cover">
           <Image src={recent.book1.cover} alt={`Cover image for ${recent.book1.title}`} />
