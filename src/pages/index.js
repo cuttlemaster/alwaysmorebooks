@@ -19,6 +19,7 @@ const samplePost = {
   author: 'Brandon Sanderson',
   categories: ['Fantasy', 'Adventure', 'Cosmere'],
   cover: TressOfTheEmeraldSea,
+  date: 'April 28, 2023',
 };
 
 const sampleHistory = {
@@ -27,30 +28,35 @@ const sampleHistory = {
     author: 'Travis Balderee',
     categories: ['Fantasy', 'Lower Stakes', 'Comfortable'],
     cover: LegendsAndLattes,
+    date: 'April 24, 2023',
   },
   book2: {
     title: 'Fallen',
     author: 'Lauren Kate',
     categories: ['Fantasy', 'Urban', 'Romance'],
     cover: Fallen,
+    date: 'April 14, 2023',
   },
   book3: {
     title: 'The Way of Kings',
     author: 'Brandon Sanderson',
     categories: ['Fantasy', 'Epic', 'Cosmere', 'The Stormlight Archive'],
     cover: TheWayOfKings,
+    date: 'April 3, 2023',
   },
   book4: {
     title: 'A Frost of Fear and Fortitude',
     author: 'A.P. Beswick',
     categories: ['Fantasy', 'Reimagining', 'Folklore'],
     cover: AFrostOfFearAndFortitude,
+    date: 'March 28, 2023',
   },
   book5: {
     title: 'A Sea of Sorrow and Scorn',
     author: 'A.P. Beswick',
     categories: ['Fantasy', 'Reimagining', 'Folklore'],
     cover: ASeaOfSorrowAndScorn,
+    date: 'March 23, 2023',
   },
 };
 
@@ -70,7 +76,7 @@ export default function Home() {
 
       <FeaturedPost post={samplePost} />
       <HistoryAndSidebarContainer>
-        <PostHistory recent={sampleHistory} />
+        <PostHistory data={sampleHistory} />
         <Sidebar />
       </HistoryAndSidebarContainer>
     </>

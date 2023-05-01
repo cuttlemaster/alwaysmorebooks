@@ -54,7 +54,7 @@ const FeaturedPostContainer = styled.div`
 `;
 
 const FeaturedPost = ({ post }) => {
-  const { title, author, categories, cover, hook } = post;
+  const { title, author, categories, cover, date } = post;
 
   return (
     <FeaturedPostContainer>
@@ -65,6 +65,7 @@ const FeaturedPost = ({ post }) => {
         <div className="categories">Categories: {categories.join(', ')}</div>
         <h2>{title}</h2>
         <div className="author">Author: {author}</div>
+        <div className="date">{date}</div>
       </div>
     </FeaturedPostContainer>
   );
