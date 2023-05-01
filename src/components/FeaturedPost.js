@@ -43,18 +43,25 @@ const FeaturedPostContainer = styled.div`
     }
 
     .author {
-      margin-bottom: 25px;
       font-family: ${theme.fonts.robotoCondensed};
       font-size: 24px;
       font-weight: 700;
       color: ${theme.colors.darkGray};
       text-transform: uppercase;
     }
+
+    .date {
+      color: ${theme.colors.darkGray};
+      font-family: ${theme.fonts.robotoCondensed};
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
   }
 `;
 
-const FeaturedPost = ({ post }) => {
-  const { title, author, categories, cover, date } = post;
+const FeaturedPost = ({ data }) => {
+  const { title, author, categories, cover, date } = data;
 
   return (
     <FeaturedPostContainer>

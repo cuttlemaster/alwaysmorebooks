@@ -74,7 +74,7 @@ export default function Home() {
         <meta name="description" content="A review blog about science fiction, fantasy, and other genre fiction books." />
       </Head>
 
-      <FeaturedPost post={samplePost} />
+      <FeaturedPost data={samplePost} />
       <HistoryAndSidebarContainer>
         <PostHistory data={sampleHistory} />
         <Sidebar />

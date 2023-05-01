@@ -33,11 +33,10 @@ const RecentReviewTile = styled.div`
     margin-left: 25px;
     width: 100%;
 
-    .categories {
+    .date {
+      margin-bottom: 10px;
       font-family: ${theme.fonts.robotoCondensed};
       font-size: 12px;
-      font-weight: 400;
-      color: ${theme.colors.tan};
       text-transform: uppercase;
     }
 
@@ -65,6 +64,14 @@ const RecentReviewTile = styled.div`
       color: ${theme.colors.darkGray};
       text-transform: uppercase;
     }
+
+    .categories {
+      font-family: ${theme.fonts.robotoCondensed};
+      font-size: 12px;
+      font-weight: 400;
+      color: ${theme.colors.tan};
+      text-transform: uppercase;
+    }
   }
 `;
 
@@ -79,10 +86,10 @@ const PostHistory = ({ data }) => {
           <Image src={book1.cover} alt={`Cover image for ${book1.title}`} />
         </div>
         <div className="post-details">
+          <div className="date">{book1.date}</div>
           <h2>{book1.title}</h2>
           <div className="author">Author: {book1.author}</div>
           <div className="categories">Categories: {book1.categories.join(', ')}</div>
-          <div className="date">{book1.date}</div>
         </div>
       </RecentReviewTile>
 
@@ -91,10 +98,10 @@ const PostHistory = ({ data }) => {
           <Image src={book2.cover} alt={`Cover image for ${book2.title}`} />
         </div>
         <div className="post-details">
+          <div className="date">{book2.date}</div>
           <h2>{book2.title}</h2>
           <div className="author">Author: {book2.author}</div>
           <div className="categories">Categories: {book2.categories.join(', ')}</div>
-          <div className="date">{book2.date}</div>
         </div>
       </RecentReviewTile>
 
@@ -103,10 +110,10 @@ const PostHistory = ({ data }) => {
           <Image src={book3.cover} alt={`Cover image for ${book3.title}`} />
         </div>
         <div className="post-details">
+          <div className="date">{book3.date}</div>
           <h2>{book3.title}</h2>
           <div className="author">Author: {book3.author}</div>
           <div className="categories">Categories: {book3.categories.join(', ')}</div>
-          <div className="date">{book3.date}</div>
         </div>
       </RecentReviewTile>
 
@@ -115,10 +122,10 @@ const PostHistory = ({ data }) => {
           <Image src={book4.cover} alt={`Cover image for ${book4.title}`} />
         </div>
         <div className="post-details">
+          <div className="date">{book4.date}</div>
           <h2>{book4.title}</h2>
           <div className="author">Author: {book4.author}</div>
           <div className="categories">Categories: {book4.categories.join(', ')}</div>
-          <div className="date">{book4.date}</div>
         </div>
       </RecentReviewTile>
 
@@ -127,10 +134,10 @@ const PostHistory = ({ data }) => {
           <Image src={book5.cover} alt={`Cover image for ${book5.title}`} />
         </div>
         <div className="post-details">
+          <div className="date">{book5.date}</div>
           <h2>{book5.title}</h2>
           <div className="author">Author: {book5.author}</div>
           <div className="categories">Categories: {book5.categories.join(', ')}</div>
-          <div className="date">{book5.date}</div>
         </div>
       </RecentReviewTile>
     </PostHistoryContainer>
