@@ -57,7 +57,7 @@ const sampleHistory = {
 const HistoryAndSidebarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 25px;
+  gap: 35px;
 `;
 
 export default function Home() {

@@ -11,7 +11,6 @@ const theme = {
     darkGray: "#434343",
     mainBg: "#fefefe",
     featuredBg: "#eeeeee",
-    sidebarBg: "#f2dab0",
   },
   fonts: {
     lilitaOne: "'Lilita One', serif",

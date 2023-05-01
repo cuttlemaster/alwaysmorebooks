@@ -23,7 +23,6 @@ const RecentReviewTile = styled.div`
   .book-cover {
     flex: 1;
     max-width: 20%;
-    img { border-radius: 15px; }
   }
 
   .post-details {
@@ -35,7 +34,6 @@ const RecentReviewTile = styled.div`
     width: 100%;
 
     .categories {
-      margin-left: 22px;
       font-family: ${theme.fonts.robotoCondensed};
       font-size: 12px;
       font-weight: 400;
@@ -44,17 +42,23 @@ const RecentReviewTile = styled.div`
     }
 
     h2 {
-      margin-bottom: 5px;
-      padding: 10px 0 8px 17px;
-      border-bottom: 5px solid ${theme.colors.lightBlue};
-      border-left: 5px solid ${theme.colors.lightBlue};
+      margin-bottom: 10px;
       border-radius: 35px;
       font-size: 28px;
       line-height: 24px;
+      width: fit-content;
+
+      &:after {
+        display: block;
+        margin-top: 3px;
+        content: " ";
+        background-color: ${theme.colors.lightBlue};
+        height: 3px;
+        width: 65%;
+      }
     }
 
     .author {
-      margin-left: 22px;
       font-family: ${theme.fonts.robotoCondensed};
       font-size: 16px;
       font-weight: 700;

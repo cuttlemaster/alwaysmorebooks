@@ -4,17 +4,17 @@ import styled from '@emotion/styled';
 import theme from '../styles/theme';
 
 const SidebarContainer = styled.aside`
-  padding: 35px 25px;
-  border-left: 5px solid ${theme.colors.tan};
-  border-right: 5px solid ${theme.colors.tan};
-  border-radius: 50px;
+  position: relative;
+  padding-left: 35px;
+  border-left: 3px solid ${theme.colors.featuredBg};
   width: 100%;
   max-width: 33.333%;
 
   h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid ${theme.colors.darkGray};
+    font-family: ${theme.fonts.robotoCondensed};
+    font-size: 28px;
   }
 
   ul {
@@ -31,7 +31,7 @@ const SidebarContainer = styled.aside`
 const Sidebar = () => {
   return (
     <SidebarContainer>
-      <h3>Sidebar Title</h3>
+      <h3>Bonus Articles</h3>
       <ul>
         <li>Item 1</li>
         <li>Item 2</li>
