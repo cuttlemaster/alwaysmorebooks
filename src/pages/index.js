@@ -48,8 +48,9 @@ const sampleHistory = {
     categories: ['Fantasy', 'Reimagining', 'Folklore'],
     cover: ASeaOfSorrowAndScorn,
   },
-
 };
+
+const HistoryAndSidebarContainer = styled.div``;
 
 export default function Home() {
   return (
@@ -61,7 +62,9 @@ export default function Home() {
 
       <main>
         <FeaturedPost post={samplePost} />
-        <PostHistory recent={sampleHistory} />
+        <HistoryAndSidebarContainer>
+          <PostHistory recent={sampleHistory} />
+        </HistoryAndSidebarContainer>
       </main>
     </>
   )
