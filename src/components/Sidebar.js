@@ -4,6 +4,8 @@ import styled from '@emotion/styled';
 
 import theme from '../styles/theme';
 
+import CustomIconListItem from '../components/CustomIconListItem';
+
 const SidebarContainer = styled.aside`
   position: relative;
   padding-left: 35px;
@@ -44,7 +46,7 @@ const Sidebar = () => {
     <SidebarContainer>
       <h3>Bonus Articles</h3>
       <ul>
-        <li><Link href="/what-i-read-in-march-2023">What I Read in March 2023</Link></li>
+        <CustomIconListItem icon="AwardStarIcon" href="/what-i-read-in-march-2023">What I Read in March 2023</CustomIconListItem>
         <li><Link href="">How Many Times Have You Read Your Favorite Book?</Link></li>
         <li><Link href="">Which Anti-Hero Do You Love?</Link></li>
         <li><Link href="">How I Feel About the Wheel of Time TV Show</Link></li>
