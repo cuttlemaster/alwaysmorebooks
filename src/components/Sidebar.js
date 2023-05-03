@@ -19,6 +19,7 @@ const SidebarContainer = styled.aside`
   }
 
   ul {
+    margin-bottom: 75px;
     padding-left: 0;
 
     li {
@@ -54,6 +55,28 @@ const Sidebar = () => {
         <li><Link href="">You'll Never Read Everything: I Promise It's Okay</Link></li>
         <li><Link href="">How Many Books Are On Your TBR?</Link></li>
         <li><Link href="">What I Read in February 2023</Link></li>
+      </ul>
+
+      <h3>SF & Fantasy Award Lists</h3>
+      <ul>
+        <li><Link href="">Hugo Award for Best Novel</Link></li>
+        <li><Link href="">Nebula Award for Best Novel</Link></li>
+        <li><Link href="">Locus Award for Best SF Novel</Link></li>
+        <li><Link href="">Locus Award for Best Fantasy Novel</Link></li>
+      </ul>
+
+      <h3>Categories</h3>
+      <ul>
+        <li><Link href="">Fantasy</Link></li>
+        <li><Link href="">Urban</Link></li>
+        <li><Link href="">Lower Stakes</Link></li>
+        <li><Link href="">Comfortable</Link></li>
+        <li><Link href="">Romance</Link></li>
+        <li><Link href="">Cosmere</Link></li>
+        <li><Link href="">The Stormlight Archive</Link></li>
+        <li><Link href="">Epic</Link></li>
+        <li><Link href="">Reimagining</Link></li>
+        <li><Link href="">Folklore</Link></li>
       </ul>
     </SidebarContainer>
   );
