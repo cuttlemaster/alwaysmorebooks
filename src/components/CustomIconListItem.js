@@ -15,7 +15,7 @@ const StyledIconListItem = styled.li`
   background-position: left center;
   margin-bottom: 25px;
 
-  &:award-star-icon { background-image: url(${AwardStarIcon}); }
+  &:award-star-icon { background-image: url(${props => props.icon}); }
   &:edit-note-icon { background-image: url(${EditNoteIcon}); }
   &:folder-icon { background-image: url(${FolderIcon}); }
 
