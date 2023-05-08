@@ -46,24 +46,24 @@ const Sidebar = () => {
 
       <h3>SF & Fantasy Award Lists</h3>
       <ul>
-        {/* <li><Link href="">Hugo Award for Best Novel</Link></li>
-        <li><Link href="">Nebula Award for Best Novel</Link></li>
-        <li><Link href="">Locus Award for Best SF Novel</Link></li>
-        <li><Link href="">Locus Award for Best Fantasy Novel</Link></li> */}
+        <CustomIconListItem icon="AwardStarIcon" href="">Hugo Award for Best Novel</CustomIconListItem>
+        <CustomIconListItem icon="AwardStarIcon" href="">Nebula Award for Best Novel</CustomIconListItem>
+        <CustomIconListItem icon="AwardStarIcon" href="">Locus Award for Best SF Novel</CustomIconListItem>
+        <CustomIconListItem icon="AwardStarIcon" href="">Locus Award for Best Fantasy Novel</CustomIconListItem>
       </ul>
 
       <h3>Categories</h3>
       <ul>
-        {/* <li><Link href="">Fantasy</Link></li>
-        <li><Link href="">Urban</Link></li>
-        <li><Link href="">Lower Stakes</Link></li>
-        <li><Link href="">Comfortable</Link></li>
-        <li><Link href="">Romance</Link></li>
-        <li><Link href="">Cosmere</Link></li>
-        <li><Link href="">The Stormlight Archive</Link></li>
-        <li><Link href="">Epic</Link></li>
-        <li><Link href="">Reimagining</Link></li>
-        <li><Link href="">Folklore</Link></li> */}
+        <CustomIconListItem icon="FolderIcon" href="">Fantasy</CustomIconListItem>
+        <CustomIconListItem icon="FolderIcon" href="">Urban</CustomIconListItem>
+        <CustomIconListItem icon="FolderIcon" href="">Lower Stakes</CustomIconListItem>
+        <CustomIconListItem icon="FolderIcon" href="">Comfortable</CustomIconListItem>
+        <CustomIconListItem icon="FolderIcon" href="">Romance</CustomIconListItem>
+        <CustomIconListItem icon="FolderIcon" href="">Cosmere</CustomIconListItem>
+        <CustomIconListItem icon="FolderIcon" href="">The Stormlight Archive</CustomIconListItem>
+        <CustomIconListItem icon="FolderIcon" href="">Epic</CustomIconListItem>
+        <CustomIconListItem icon="FolderIcon" href="">Reimagining</CustomIconListItem>
+        <CustomIconListItem icon="FolderIcon" href="">Folklore</CustomIconListItem>
       </ul>
     </SidebarContainer>
   );
