@@ -21,7 +21,7 @@ const SidebarContainer = styled.aside`
   }
 
   ul {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     padding-left: 0;
   }
 `;
