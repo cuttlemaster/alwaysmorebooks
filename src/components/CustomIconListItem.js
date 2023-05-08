@@ -10,14 +10,34 @@ import FolderIcon from '../images/icons/folder.svg';
 
 const StyledIconListItem = styled.li`
   list-style-type: none;
-  padding-left: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
   background-repeat: no-repeat;
   background-position: left center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid ${theme.colors.featuredBg};
 
-  &:award-star-icon { background-image: url(${props => props.icon}); }
-  &:edit-note-icon { background-image: url(${EditNoteIcon}); }
-  &:folder-icon { background-image: url(${FolderIcon}); }
+  &.award-star-icon {
+    background-image: url(${AwardStarIcon.src});
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  &.edit-note-icon {
+    background-image: url(${EditNoteIcon.src});
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  &.folder-icon {
+    background-image: url(${FolderIcon.src});
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
 
   a {
     color: ${theme.colors.darkGray};

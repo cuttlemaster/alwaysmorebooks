@@ -5,7 +5,6 @@ import styled from '@emotion/styled';
 import theme from '../styles/theme';
 
 import CustomIconListItem from '../components/CustomIconListItem';
-import AwardStarIcon from '../images/icons/award-star.svg';
 
 const SidebarContainer = styled.aside`
   position: relative;
@@ -24,10 +23,6 @@ const SidebarContainer = styled.aside`
   ul {
     margin-bottom: 75px;
     padding-left: 0;
-
-    li {
-
-    }
   }
 `;
 
@@ -36,17 +31,17 @@ const Sidebar = () => {
     <SidebarContainer>
       <h3>Bonus Articles</h3>
       <ul>
-        <CustomIconListItem icon={AwardStarIcon} href="/what-i-read-in-march-2023">What I Read in March 2023</CustomIconListItem>
-        {/* <li><Link href="">How Many Times Have You Read Your Favorite Book?</Link></li>
-        <li><Link href="">Which Anti-Hero Do You Love?</Link></li>
-        <li><Link href="">How I Feel About the Wheel of Time TV Show</Link></li>
-        <li><Link href="">Kindle, Print, Audiobook: How Do You Read?</Link></li>
-        <li><Link href="">My Constant Battle with Genre Fiction Hating Standalones</Link></li>
-        <li><Link href="">Best Science Fiction Books I Read in 2022</Link></li>
-        <li><Link href="">New TBR Additions: Lady Astronauts & Devil Dinosaurs</Link></li>
-        <li><Link href="">You'll Never Read Everything: I Promise It's Okay</Link></li>
-        <li><Link href="">How Many Books Are On Your TBR?</Link></li>
-        <li><Link href="">What I Read in February 2023</Link></li> */}
+        <CustomIconListItem icon="EditNoteIcon" href="/what-i-read-in-march-2023">What I Read in March 2023</CustomIconListItem>
+        <CustomIconListItem icon="EditNoteIcon" href="">How Many Times Have You Read Your Favorite Book?</CustomIconListItem>
+        <CustomIconListItem icon="EditNoteIcon" href="">Which Anti-Hero Do You Love?</CustomIconListItem>
+        <CustomIconListItem icon="EditNoteIcon" href="">How I Feel About the Wheel of Time TV Show</CustomIconListItem>
+        <CustomIconListItem icon="EditNoteIcon" href="">Kindle, Print, Audiobook: How Do You Read?</CustomIconListItem>
+        <CustomIconListItem icon="EditNoteIcon" href="">My Constant Battle with Genre Fiction Hating Standalones</CustomIconListItem>
+        <CustomIconListItem icon="EditNoteIcon" href="">Best Science Fiction Books I Read in 2022</CustomIconListItem>
+        <CustomIconListItem icon="EditNoteIcon" href="">New TBR Additions: Lady Astronauts & Devil Dinosaurs</CustomIconListItem>
+        <CustomIconListItem icon="EditNoteIcon" href="">You'll Never Read Everything: I Promise It's Okay</CustomIconListItem>
+        <CustomIconListItem icon="EditNoteIcon" href="">How Many Books Are On Your TBR?</CustomIconListItem>
+        <CustomIconListItem icon="EditNoteIcon" href="">What I Read in February 2023</CustomIconListItem>
       </ul>
 
       <h3>SF & Fantasy Award Lists</h3>
