@@ -29,7 +29,7 @@ const SidebarContainer = styled.aside`
 const Sidebar = () => {
   return (
     <SidebarContainer>
-      <h3>Bonus Articles</h3>
+      <h3>Recent Articles</h3>
       <ul>
         <CustomIconListItem icon="EditNoteIcon" href="/what-i-read-in-march-2023">What I Read in March 2023</CustomIconListItem>
         <CustomIconListItem icon="EditNoteIcon" href="">How Many Times Have You Read Your Favorite Book?</CustomIconListItem>

@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import styled from '@emotion/styled';
 
-import theme from '../styles/theme';
-
 import FeaturedPost from '../components/FeaturedPost';
 import PostHistory from '../components/PostHistory';
 import Sidebar from '../components/Sidebar';

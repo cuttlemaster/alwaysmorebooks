@@ -15,6 +15,21 @@ const GlobalStyles = ({theme}) => {
           font-family: ${theme.fonts.lilitaOne};
           font-size: 36px;
           line-height: 36px;
+
+          &.about {
+            margin-bottom: 50px;
+            font-size: 42px;
+            line-height: 54px;
+
+            &:after {
+              display: block;
+              margin-top: 3px;
+              content: " ";
+              background-color: ${theme.colors.lightBlue};
+              height: 5px;
+              width: 45%;
+            }
+          }
         }
 
         h2 {
@@ -23,6 +38,13 @@ const GlobalStyles = ({theme}) => {
           font-weight: 700;
           line-height: 64px;
           text-transform: uppercase;
+        }
+
+        p {
+          margin-bottom: 15px;
+          font-family: ${theme.fonts.alegreya};
+          font-size: 20px;
+          line-height: 26px;
         }
 
         /* COLOR HELPER CLASSES ========================= */
