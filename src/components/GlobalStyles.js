@@ -20,6 +20,7 @@ const GlobalStyles = ({theme}) => {
             margin-bottom: 50px;
             font-size: 42px;
             line-height: 54px;
+            text-transform: uppercase;
 
             &:after {
               display: block;

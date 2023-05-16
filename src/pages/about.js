@@ -26,7 +26,7 @@ export default function About() {
 
       <AboutContainer>
         <MainBody>
-          <h1 className="about">The Tale of How an Old Dog Learned New Tricks and AI Assisted Book Reviews Became a Reality</h1>
+          <h1 className="about">The Tale of a Guy Who Loves Books and How AI Assisted Reviews Became His Reality</h1>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mauris purus. Sed tincidunt ornare malesuada. Sed sit amet sem mi. Ut et nunc a erat dapibus rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean quis rhoncus diam.</p>
 
