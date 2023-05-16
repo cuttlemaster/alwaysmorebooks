@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import theme from '../styles/theme';
 
 import MainContainer from '../components/MainContainer';
-import Sidebar from '../components/Sidebar';
+import AboutSidebar from '../components/AboutSidebar';
 
 const AboutContainer = styled(MainContainer)`
   display: flex;
@@ -44,7 +44,7 @@ export default function About() {
 
           <p>Donec facilisis, sem id lacinia porttitor, lacus enim tincidunt nisl, vitae</p>
         </MainBody>
-        <Sidebar />
+        <AboutSidebar />
       </AboutContainer>
     </>
   )
